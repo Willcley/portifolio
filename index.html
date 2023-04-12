@@ -9,21 +9,37 @@
 </head>
 <body>
     <header>
-        <section>
-            <img class="fotoPerfil" src="./img/foto/IMG_20230322_111840662~2.jpg" alt="minha foto">
+        <section class="headerSection1">
+            <img class="fotoPerfil" src="./img/foto/Eu.png" alt="minha foto">
             <h1>Willcley de Melo Souza</h1>
             <p>Desenvolvedor Full-Stack em formação...</p>
         </section>
-        <section>
-            <nav></nav>
-            <form></form>
+        <section class="headerSection2">
+            <ul>
+                <li for="projetos">Projrtos</li>
+                <li for="sobreMim">Sobre mim</li>
+                <li for="contato">Contato</li>
+                <li>Redes</li>
+            </ul>
+            <form id="contato">
+                <label for="formaContato">Forma de contato:</label>
+                <select name="formaContato" id="formaContato">
+                    <option value="" selected disabled>--contato--</option>
+                    <option value="opcaoEmail">Email</option>
+                    <option value="opcaoWhatsapp">Whatsapp</option>
+                </select>
+                <label for="seuNome">Seu nome:</label>
+                <input id="seuNome" type="seuNome" placeholder="Informe seu nome...">
+                <label for="mensagem">Se apresente:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="6">Olá! Me chamo..., e gostaria de...</textarea>
+            </form>
         </section>
     </header>
     <main>
-        <section>
+        <section id="projetos">
             <h2>Veja meus projetos:</h2>
         </section>
-        <section>
+        <section id="sobreMim">
             <h2>Sobre mim:</h2>
         </section>
         <section>
